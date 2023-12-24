@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact List Management Website</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="menu-bar">
+      <p>Logo</p>
+      <p>Home</p>
+      <p>Blog</p>
+      <p>Explore</p>
+      <p><a href="#" onclick="goToRegister()">Register</a></p>
+      <p><a href="#" onclick="goToLogin()">Login</a></p>
+      <button onclick="goToRegister()">Logout</button>
+    </div>
+    <div class="register" id="register-sec">
+      <form>
+        <h2>CREATE YOUR ACCOUNT!</h2>
+
+        <label>Name: </label>
+        <input type="text" value="" placeholder="  Enter Your Name" /><br>
+
+        <label>Email: </label>
+        <input type="email" value="" placeholder="  Email Address" id="r-email" /><br>
+
+        <label>Password: </label>
+        <input type="password" value="" placeholder="  EnterYour Password" id="r-password" /><br>
+
+        <label>Confirm Password: </label>
+        <input type="password" value="" placeholder="  Confirm Your Password" /><br>
+
+        <button id="register-btn" onclick="goToLogin()">Register</button>
+
+        <p>Already have an account? please <a href="#">Login</a> here</p>
+
+      </form>
+
+    </div>
+
+    <div class="login" id="login-sec">
+      <form>
+        <h2>LOGIN</h2>
+
+        <label>Email:</label>
+        <input type="email" value="" placeholder="  Email Address" id="l-email" /><br>
+
+        <label>Password:</label>
+        <input type="password" value="" placeholder="  Enter password" id="l-email" /><br>
+
+        <button id="login-btn" onclick="goToContact()">Login</button><br>
+
+        <p>Don't have an account ? <a href="#">Register</a> here</p>
+      </form>
+    </div>
+
+
+      <div class="contact" id="contact-sec">
+        <h2>ADD YOUR CONTACT</h2>
+        <form>
+
+          <label>Name Of Person:</label>
+          <input type="text" placeholder="  John" value="" /><br>
+
+          <label>Address Of Person:</label>
+          <input type="text" placeholder="  Agra, India" value="" /><br>
+
+          <label>Email Of Person:</label>
+          <input type="email" placeholder="  xyz@gmail.com" value="" /><br>
+
+          <label>Mobile number Of Person:</label>
+          <input type="number" placeholder="  +91 9000090000" value="" /><br>
+
+          <button onclick="goToDisplay()">Add Contact</button>
+        </form>
+
+      </div>
+      
+    <script src="script.js"></script>
+</body>
+
+</html>
